@@ -9,11 +9,13 @@ namespace MVC_Alumnos.Controllers
 {
     public class HomeController : Controller
     {
+
+        private Alumno alumno = new Alumno();
         public ActionResult Index()
         {
-            var test = new AlumnosMVCContext();
+         
 
-            return View(test.Alumno.ToList());
+            return View(alumno.Listar());
         }
 
         public ActionResult About()

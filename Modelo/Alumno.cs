@@ -41,7 +41,10 @@ namespace Modelo
                 }
             }
             catch (Exception)
-            { }
+            {
+                throw;
+
+            }
             return alumnos;
         }
     }

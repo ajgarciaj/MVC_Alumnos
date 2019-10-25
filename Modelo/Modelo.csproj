@@ -53,7 +53,6 @@
   <ItemGroup>
     <Compile Include="Alumno.cs" />
     <Compile Include="AlumnosMVCContext.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Curso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
