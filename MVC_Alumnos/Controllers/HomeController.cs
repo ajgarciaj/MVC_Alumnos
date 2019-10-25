@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,9 @@ namespace MVC_Alumnos.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var test = new AlumnosMVCContext();
+
+            return View(test.Alumno.ToList());
         }
 
         public ActionResult About()
