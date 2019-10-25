@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Modelo.Alumno>
+@{
     ViewBag.Title = "Alumnos";
 }
 
@@ -18,6 +19,14 @@
                  <th>Apellido</th>
              </tr>
          </thead>
+         <tbody>
+             @foreach (var a in @Model )
+             {   <tr>
+                     <td>@a.NOMBRE</td>
+                     <td>@a.APELLIDO</td>
+                 </tr>
+             }
+         </tbody>
      </table>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>

@@ -40,7 +40,7 @@ namespace Modelo
                     alumnos = context.Alumno.ToList();
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 throw;
 
